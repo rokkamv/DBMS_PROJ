@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Insertion</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../static/images/icons/cab.jpg"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="container-login100-form-btn">
+					<a href="/logout" style="margin-left: 80%;">
+					<button class="login100-form-btn" >
+						Logout
+					</button>
+					</a>
+                </div>
+                <a href='adminPage'>
+                    <button class="btn btn-dark">Admin Home</button>
+                </a>
+                <br><br><br>
+                <span class="login100-page-title" >
+                    <u><b>INSERT into Database</b></u>
+                </span>
+                <div class="card text-grey bg-success mb-3" style="max-width: 30rem;">
+                        <div class="card-header">RIDE Insertion</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Fill the following details:</h5>
+                          (DateTime format: YYYY-MM-DD HH:MM:SS )
+                          <form action="/insert" method="POST" class="login100-form validate-form">
+                            <div class="wrap-input100 ">
+                                <input class="input100" type="text" name="rdriverid" placeholder="Driver ID">
+                                <span class="focus-input100"></span>
+                            </div>
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="rriderid" placeholder="Rider ID">
+                                    <span class="focus-input100"></span>
+                            </div>
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="dtstart" placeholder="Ride DateTime Start">
+                                    <span class="focus-input100"></span>
+                                </div>
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="dtend" placeholder="Ride DateTime End">
+                                    <span class="focus-input100"></span>
+                                </div>
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="ploc" placeholder="Pickup location">
+                                    <span class="focus-input100"></span>
+                                </div>
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="dloc" placeholder="Drop location">
+                                    <span class="focus-input100"></span>
+                                </div>
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="rtype" placeholder="Type">
+                                    <span class="focus-input100"></span>
+                                </div>                    
+                            <div class="container-login100-form-btn">
+                                <button name="rideform" class="login100-form-btn js-tilt" type="submit">
+                                    INSERT Values
+                                </button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <div class="card text-grey bg-success mb-3" style="max-width: 30rem;">
+                        <div class="card-header">DRIVER Insertion</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Fill the following details:</h5>
+                          <form action="/insert" method="POST" class="login100-form validate-form">
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="dfname" placeholder="First Name">
+                                    <span class="focus-input100"></span>
+                                </div>
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="dlname" placeholder="Last Name">
+                                    <span class="focus-input100"></span>
+                                </div>
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="dvno" placeholder="Vehicle No.">
+                                    <span class="focus-input100"></span>
+                                </div>
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="dvname" placeholder="Vehicle Name">
+                                    <span class="focus-input100"></span>
+                            </div>                
+                            <div class="container-login100-form-btn">
+                                <button name="driverform" class="login100-form-btn js-tilt" type="submit">
+                                    INSERT Values
+                                </button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <div class="card text-grey bg-success mb-3" style="max-width: 30rem;">
+                        <div class="card-header">RIDER Insertion</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Fill the following details:</h5>
+                          <form action="/insert" method="POST" class="login100-form validate-form">
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="rfname" placeholder="First Name">
+                                    <span class="focus-input100"></span>
+                                </div>
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="rlname" placeholder="Last Name">
+                                    <span class="focus-input100"></span>
+                                </div>
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="contact" placeholder="Contact No.">
+                                    <span class="focus-input100"></span>
+                                </div>
+                            <div class="wrap-input100 ">
+                                    <input class="input100" type="text" name="dvname" placeholder="Vehicle Name">
+                                    <span class="focus-input100"></span>
+                            </div>                
+                            <div class="container-login100-form-btn">
+                                <button name="riderform" class="login100-form-btn js-tilt" type="submit">
+                                    INSERT Values
+                                </button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                <br><br><br><br>
+                <div class="card text-grey bg-success mb-3" style="max-width: 30rem;">
+                    <div class="card-header">VEHICLE Insertion</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Fill the following details:</h5>
+                      <form action="/insert" method="POST" class="login100-form validate-form">
+                        <div class="wrap-input100 ">
+                            <input class="input100" type="text" name="vname" placeholder="Vehicle Name">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 ">
+                                <input class="input100" type="text" name="vtype" placeholder="Type">
+                                <span class="focus-input100"></span>
+                            </div>
+                        <div class="wrap-input100 ">
+                                <input class="input100" type="text" name="make" placeholder="Make">
+                                <span class="focus-input100"></span>
+                        </div>
+                        <div class="container-login100-form-btn">
+                            <button name="vform" class="login100-form-btn js-tilt" type="submit">
+                                INSERT Values
+                            </button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div class="card text-grey bg-success mb-3" style="max-width: 30rem;">
+                    <div class="card-header">Cancelled RIDE Insertion</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Fill the following details:</h5>
+                      <form action="/insert" method="POST" class="login100-form validate-form">
+                        <div class="wrap-input100 ">
+                            <input class="input100" type="text" name="crideid" placeholder="Ride ID">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 ">
+                                <input class="input100" type="text" name="criderid" placeholder="Rider ID">
+                                <span class="focus-input100"></span>
+                            </div>
+                        <div class="wrap-input100 ">
+                                <input class="input100" type="text" name="cdriverid" placeholder="Driver ID">
+                                <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 ">
+                                <input class="input100" type="text" name="reason" placeholder="Reason">
+                                <span class="focus-input100"></span>
+                        </div>
+                        <div class="container-login100-form-btn">
+                            <button name="crideform" class="login100-form-btn js-tilt" type="submit">
+                                INSERT Values
+                            </button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	
+<!--===============================================================================================-->	
+	<script src="../static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/bootstrap/js/popper.js"></script>
+	<script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="../static/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Deletion</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../static/images/icons/cab.jpg"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="container-login100-form-btn">
+					<a href="/logout" style="margin-left: 80%;">
+					<button class="login100-form-btn" >
+						Logout
+					</button>
+					</a>
+                </div>
+                <a href='adminPage'>
+                    <button class="btn btn-dark">Admin Home</button>
+                </a>
+                <br><br><br>
+                <span class="login100-page-title" >
+                    <u><b>DELETE from Database</b></u>
+                </span>
+                <div class="card text-grey bg-success mb-3" style="max-width: 30rem;">
+                        <div class="card-header">Cancelled RIDE Deletion</div>
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <form action="/delete" method="POST" class="login100-form validate-form">
+                            <div class="wrap-input100 ">
+                                <input class="input100" type="text" name="crideid" placeholder="Ride ID">
+                                <span class="focus-input100"></span>
+                            </div>                  
+                            <div class="container-login100-form-btn">
+                                <button name="dcrideform" class="login100-form-btn js-tilt" type="submit">
+                                    DELETE Row
+                                </button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <div class="card text-grey bg-success mb-3" style="max-width: 30rem;">
+                        <div class="card-header">RIDE Deletion</div>
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <form action="/delete" method="POST" class="login100-form validate-form">
+                            <div class="wrap-input100 ">
+                                <input class="input100" type="text" name="rideid" placeholder="Ride ID">
+                                <span class="focus-input100"></span>
+                            </div>                  
+                            <div class="container-login100-form-btn">
+                                <button name="drideform" class="login100-form-btn js-tilt" type="submit">
+                                    DELETE Row
+                                </button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <div class="card text-grey bg-success mb-3" style="max-width: 30rem;">
+                        <div class="card-header">DRIVER Deletion</div>
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <form action="/delete" method="POST" class="login100-form validate-form">
+                            <div class="wrap-input100 ">
+                                <input class="input100" type="text" name="driverid" placeholder="Driver ID">
+                                <span class="focus-input100"></span>
+                            </div>                  
+                            <div class="container-login100-form-btn">
+                                <button name="ddriverform" class="login100-form-btn js-tilt" type="submit">
+                                    DELETE Row
+                                </button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <div class="card text-grey bg-success mb-3" style="max-width: 30rem;">
+                        <div class="card-header">RIDER Deletion</div>
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <form action="/delete" method="POST" class="login100-form validate-form">
+                            <div class="wrap-input100 ">
+                                <input class="input100" type="text" name="riderid" placeholder="Rider ID">
+                                <span class="focus-input100"></span>
+                            </div>                  
+                            <div class="container-login100-form-btn">
+                                <button name="driderform" class="login100-form-btn js-tilt" type="submit">
+                                    DELETE Row
+                                </button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <div class="card text-grey bg-success mb-3" style="max-width: 30rem;">
+                        <div class="card-header">VEHICLE Deletion</div>
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <form action="/delete" method="POST" class="login100-form validate-form">
+                            <div class="wrap-input100 ">
+                                <input class="input100" type="text" name="vname" placeholder="Vehicle name">
+                                <span class="focus-input100"></span>
+                            </div>                  
+                            <div class="container-login100-form-btn">
+                                <button name="dvform" class="login100-form-btn js-tilt" type="submit">
+                                    DELETE Row
+                                </button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	
+<!--===============================================================================================-->	
+	<script src="../static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/bootstrap/js/popper.js"></script>
+	<script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="../static/js/main.js"></script>
+
+</body>
+</html>
